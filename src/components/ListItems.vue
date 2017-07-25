@@ -21,7 +21,7 @@
         <input class="addListItemButton" type="submit" value="Add">
       </form>
 
-      
+
   </div>
 </template>
 
@@ -52,8 +52,8 @@
     },
     computed: {
       numberSum: function(){
-        var sum = 0;
-        for (var i = 0; i < this.defaultListItems.length; i++) {
+        let sum = 0;
+        for (let i = 0; i < this.defaultListItems.length; i++) {
           sum += +this.defaultListItems[i].number;
         }
         return sum;
